@@ -563,7 +563,7 @@ footer a.how-to-find {
 
 #map iframe {
     position: absolute;
-    z-index: 1000;
+    z-index: 3;
     top: 7px;
     left: 7px;
 }
