@@ -937,3 +937,11 @@ label[for=remember-me]:hover {
     top: 50%;
     right: 0;
 }
+
+.price-content-table td {
+    width: 230px;
+}
+
+.price-content-table td:last-child {
+    text-align: center;
+}
