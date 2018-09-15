@@ -90,6 +90,10 @@ input[type=text], input[type=password] {
     opacity: 1;
 }
 
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
 input[type=text]:focus, input[type=password]:focus {
     border-color: #663d15;
@@ -101,6 +105,98 @@ input[type=text]:focus, input[type=password]:focus {
     margin-left: auto;
     margin-right: auto;
 }
+
+.price-list {
+    background-color: #f7f4f1;
+    background-image: url("../img/content-background.jpg");
+    background-repeat: repeat;
+}
+
+.content-list {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.content-list li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.content-list li::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -5px;
+    left: -20px;
+}
+
+.content-table {
+    border-collapse: collapse;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.content-table td {
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
+    height: 43px;
+    padding: 10px 15px;
+}
+
+.breadcrumbs {
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.breadcrumbs li {
+    margin-right: 40px;
+    position: relative;
+}
+
+.breadcrumbs li::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -5px;
+    right: -26px;
+}
+
+.breadcrumbs li:last-child::after {
+    display: none;
+    
+    
+}
+
+.breadcrumbs li:last-child a{
+    color: #dddbd8;
+    cursor: default;
+}
+
 
 
 /*-----------------------------------------------*/
@@ -146,7 +242,7 @@ input[type=text]:focus, input[type=password]:focus {
     position: absolute;
     top: 50%;
     margin-top: -8px;
-    left: 30px;
+    left: 10px;
 }
 
 .login-btn a:hover::before {
@@ -163,6 +259,8 @@ input[type=text]:focus, input[type=password]:focus {
     color: white;
     display: block;
     padding: 26px 20px;
+    height: 72px;
+    box-sizing: border-box;
 }
 
 .index-header a:hover {
@@ -178,6 +276,13 @@ input[type=text]:focus, input[type=password]:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.nav-logo {
+    background-image: url("../img/Logo.png");
+    background-repeat: no-repeat;
+    min-width: 140px;
+    background-position: center;
 }
 
 
@@ -766,6 +871,66 @@ label[for=remember-me]:hover {
     display: block;
 }
 
+/*--------------------------------- price content ---------------------*/
 
+.price-content-header {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
 
+.price-content-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
 
+.price-content-left, .price-content-right {
+    width: 50%;
+}
+
+.price-about-us {
+    margin-bottom: 75px;
+}
+
+.price-about-us p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 380px;
+}
+
+.price-decorate {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 55px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.price-decorate::before {
+    display: block;
+    content: "";
+    width: 160px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.price-decorate::after {
+    display: block;
+    content: "";
+    width: 160px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
